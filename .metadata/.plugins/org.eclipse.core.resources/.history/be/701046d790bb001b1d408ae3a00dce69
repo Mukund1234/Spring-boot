@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.email.emailservice;
+
+import java.io.FileNotFoundException;
+
+import javax.mail.MessagingException;
+
+/**
+ * @author mukund shil
+ *
+ */
+public interface EmailService {
+	
+	void sendSimpleEmail(final String toAddress, final String subject, final String message);
+	void sendEmailWithAttachment(final String toAddress, final String subject, final String message, final String attachment) throws MessagingException, FileNotFoundException;
+	
+}

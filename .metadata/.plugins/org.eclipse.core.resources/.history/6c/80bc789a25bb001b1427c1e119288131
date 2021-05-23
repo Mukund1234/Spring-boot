@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.email.emailservice;
+
+/**
+ * @author mukund shil
+ *
+ */
+public interface EmailService {
+
+}

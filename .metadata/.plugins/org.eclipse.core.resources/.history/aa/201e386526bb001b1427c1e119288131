@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package com.email.emailservice;
+
+import java.io.FileNotFoundException;
+
+import javax.mail.MessagingException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
+
+/**
+ * @author mukund shil
+ *
+ */
+public class DefaultEmailService implements EmailService {
+	
+	@Autowired
+	public JavaMailSender javaMailSender;
+
+	@Override
+	public void sendSimpleEmail(String toAddress, String subject, String message) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void sendEmailWithAttachment(String toAddress, String subject, String message, String attachment)
+			throws MessagingException, FileNotFoundException {
+		// TODO Auto-generated method stub
+
+	}
+
+}
